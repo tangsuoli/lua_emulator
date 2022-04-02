@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="lua-win32" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/lua-win32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../lua-2.4" />
+				</Compiler>
+				<Linker>
+					<Add library="winmm" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/lua-win32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="gdi32" />
+			<Add library="user32" />
+			<Add library="kernel32" />
+			<Add library="comctl32" />
+		</Linker>
+		<Unit filename="../lua-2.4/fallback.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../lua-2.4/fallback.h" />
+		<Unit filename="../lua-2.4/func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../lua-2.4/func.h" />
+		<Unit filename="../lua-2.4/hash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../lua-2.4/hash.h" />
+		<Unit filename="../lua-2.4/inout.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../lua-2.4/inout.h" />
+		<Unit filename="../lua-2.4/lex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../lua-2.4/lex.h" />
+		<Unit filename="../lua-2.4/lua.h" />
+		<Unit filename="../lua-2.4/luadebug.h" />
+		<Unit filename="../lua-2.4/lualib.h" />
+		<Unit filename="../lua-2.4/mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../lua-2.4/mem.h" />
+		<Unit filename="../lua-2.4/opcode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../lua-2.4/opcode.h" />
+		<Unit filename="../lua-2.4/parser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../lua-2.4/parser.h" />
+		<Unit filename="../lua-2.4/table.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../lua-2.4/table.h" />
+		<Unit filename="../lua-2.4/tree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../lua-2.4/tree.h" />
+		<Unit filename="../lua-2.4/types.h" />
+		<Unit filename="../lua-2.4/undump.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../lua-2.4/undump.h" />
+		<Unit filename="../test/1/1.f1a" />
+		<Unit filename="../test/1/1.mp3" />
+		<Unit filename="../test/1/2.f1a" />
+		<Unit filename="../test/1/2.mp3" />
+		<Unit filename="../test/1/3.f1a" />
+		<Unit filename="../test/1/3.mp3" />
+		<Unit filename="../test/1/4.f1a" />
+		<Unit filename="../test/1/4.mp3" />
+		<Unit filename="../test/1/5.f1a" />
+		<Unit filename="../test/1/5.mp3" />
+		<Unit filename="../test/1/6.f1a" />
+		<Unit filename="../test/1/6.mp3" />
+		<Unit filename="../test/1/card.lua" />
+		<Unit filename="../test/1/card1.lua" />
+		<Unit filename="../test/1/cor.f1a" />
+		<Unit filename="../test/1/cor.mp3" />
+		<Unit filename="../test/1/fin.f1a" />
+		<Unit filename="../test/1/fin.mp3" />
+		<Unit filename="../test/1/guide.f1a" />
+		<Unit filename="../test/1/guide.mp3" />
+		<Unit filename="../test/1/tout.f1a" />
+		<Unit filename="../test/1/tout.mp3" />
+		<Unit filename="../test/1/wro.f1a" />
+		<Unit filename="../test/1/wro.mp3" />
+		<Unit filename="../test/1/wro.wav" />
+		<Unit filename="../test/2/01.f1a" />
+		<Unit filename="../test/2/01.mp3" />
+		<Unit filename="../test/2/02.f1a" />
+		<Unit filename="../test/2/02.mp3" />
+		<Unit filename="../test/2/03.f1a" />
+		<Unit filename="../test/2/03.mp3" />
+		<Unit filename="../test/2/2.zip" />
+		<Unit filename="../test/2/card.lua" />
+		<Unit filename="lua_test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="play_test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

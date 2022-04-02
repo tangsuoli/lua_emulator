@@ -1,0 +1,201 @@
+# depslib dependency file v1.0
+1648602985 source:d:\work\lua_project\lua-win32\main.cpp
+	<tchar.h>
+	<windows.h>
+	<stdlib.h>
+	<stdio.h>
+
+830441400 source:d:\work\lua_project\lua-2.4\fallback.c
+	<stdio.h>
+	<string.h>
+	"mem.h"
+	"fallback.h"
+	"opcode.h"
+	"lua.h"
+	"table.h"
+
+830196037 d:\work\lua_project\lua-2.4\mem.h
+
+830441400 d:\work\lua_project\lua-2.4\fallback.h
+	"lua.h"
+	"opcode.h"
+
+1648441650 d:\work\lua_project\lua-2.4\lua.h
+
+826895593 d:\work\lua_project\lua-2.4\opcode.h
+	"lua.h"
+	"types.h"
+	"tree.h"
+	"func.h"
+
+823702397 d:\work\lua_project\lua-2.4\types.h
+	<limits.h>
+
+825354469 d:\work\lua_project\lua-2.4\tree.h
+	"types.h"
+
+826818860 d:\work\lua_project\lua-2.4\func.h
+	"types.h"
+	"lua.h"
+	"tree.h"
+
+830196037 d:\work\lua_project\lua-2.4\table.h
+	"tree.h"
+	"opcode.h"
+
+827434469 source:d:\work\lua_project\lua-2.4\func.c
+	<stdlib.h>
+	"luadebug.h"
+	"table.h"
+	"mem.h"
+	"func.h"
+	"opcode.h"
+
+827341544 d:\work\lua_project\lua-2.4\luadebug.h
+	"lua.h"
+
+831393027 source:d:\work\lua_project\lua-2.4\hash.c
+	"mem.h"
+	"opcode.h"
+	"hash.h"
+	"table.h"
+	"lua.h"
+
+831393027 d:\work\lua_project\lua-2.4\hash.h
+	"types.h"
+	"opcode.h"
+
+827274517 source:d:\work\lua_project\lua-2.4\inout.c
+	<stdio.h>
+	"lex.h"
+	"opcode.h"
+	"inout.h"
+	"table.h"
+	"tree.h"
+	"lua.h"
+	"mem.h"
+
+824304951 d:\work\lua_project\lua-2.4\lex.h
+
+826914118 d:\work\lua_project\lua-2.4\inout.h
+	"types.h"
+	<stdio.h>
+
+827426027 source:d:\work\lua_project\lua-2.4\lex.c
+	<ctype.h>
+	<string.h>
+	"mem.h"
+	"tree.h"
+	"table.h"
+	"lex.h"
+	"inout.h"
+	"luadebug.h"
+	"parser.h"
+
+832103097 d:\work\lua_project\lua-2.4\parser.h
+
+831401940 source:d:\work\lua_project\lua-2.4\mem.c
+	<stdlib.h>
+	"mem.h"
+	"lua.h"
+
+1648441755 source:d:\work\lua_project\lua-2.4\opcode.c
+	<setjmp.h>
+	<stdio.h>
+	<string.h>
+	"luadebug.h"
+	"mem.h"
+	"opcode.h"
+	"hash.h"
+	"inout.h"
+	"table.h"
+	"lua.h"
+	"fallback.h"
+	"undump.h"
+
+826581581 d:\work\lua_project\lua-2.4\undump.h
+	"func.h"
+
+1648435157 source:d:\work\lua_project\lua-2.4\parser.c
+	<c_varieties.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdlib.h>
+	"luadebug.h"
+	"mem.h"
+	"lex.h"
+	"opcode.h"
+	"hash.h"
+	"inout.h"
+	"tree.h"
+	"table.h"
+	"lua.h"
+	"func.h"
+
+831392975 source:d:\work\lua_project\lua-2.4\table.c
+	"mem.h"
+	"opcode.h"
+	"tree.h"
+	"hash.h"
+	"table.h"
+	"inout.h"
+	"lua.h"
+	"fallback.h"
+	"luadebug.h"
+
+826818986 source:d:\work\lua_project\lua-2.4\tree.c
+	<string.h>
+	"mem.h"
+	"lua.h"
+	"tree.h"
+	"lex.h"
+	"hash.h"
+	"table.h"
+
+826824675 source:d:\work\lua_project\lua-2.4\undump.c
+	<stdio.h>
+	<string.h>
+	"opcode.h"
+	"mem.h"
+	"table.h"
+	"undump.h"
+
+1648603954 source:d:\work\lua_project\lua-win32\lua_test.cpp
+	<stdio.h>
+	<stdlib.h>
+	"lua.h"
+	"lualib.h"
+	"string.h"
+
+830898835 d:\work\lua_project\lua-2.4\lualib.h
+	"lua.h"
+
+1648866460 source:d:\work\lua_project\lua-win32\main.c
+	<tchar.h>
+	<windows.h>
+	<stdlib.h>
+	<stdio.h>
+	<shlobj.h>
+	<stdbool.h>
+
+1648865288 source:d:\work\lua_project\lua-win32\lua_test.c
+	<stdio.h>
+	<stdlib.h>
+	"lua.h"
+	"lualib.h"
+	"string.h"
+	"stdbool.h"
+	<windows.h>
+
+1648608299 d:\work\lua_project\lua-win32\play_test.h
+	<stdbool.h>
+
+1648629807 source:d:\work\lua_project\lua-win32\play_test.c
+	<Windows.h>
+	<MMSystem.h>
+	<stdbool.h>
+
+1648620904 source:d:\work\lua_project\lua-win32\utils.c
+	<stdio.h>
+	<string.h>
+
