@@ -147,7 +147,7 @@ static void flush_list (int m, int n)
 {
   if (n == 0) return;
   if (m == 0)
-    code_byte(STORELIST0); 
+    code_byte(STORELIST0);
   else
   if (m < 255)
   {
@@ -184,7 +184,7 @@ static void add_varbuffer (Long var)
 }
 
 static void code_number (float f)
-{ 
+{
   Word i = (Word)f;
   if (f == (float)i)  /* f has an (short) integer value */
   {
@@ -224,7 +224,7 @@ static int lua_localname (TaggedString *n)
 ** Otherwise, if zero, push indexed variable (record).
 */
 static void lua_pushvar (Long number)
-{ 
+{
  if (number > 0)	/* global var */
  {
   code_byte(PUSHGLOBAL);
@@ -279,7 +279,7 @@ static void init_func (void)
   }
   savemain();  /* save main values */
   /* set func values */
-  pc=0; basepc=funcCode; maxcurr=maxcode; 
+  pc=0; basepc=funcCode; maxcurr=maxcode;
   nlocalvar = 0;
   luaI_codedebugline(lua_linenumber);
 }
@@ -352,7 +352,7 @@ static void storesinglevar (Long v)
      code_byte(number);
    }
  }
- else 
+ else
    code_byte(STOREINDEXED0);
 }
 
@@ -401,10 +401,10 @@ static void PrintCode (Byte *c, Byte *end);
 */
 void lua_parse (TFunc *tf)
 {
- printf("*******************%s****************\n", __func__);
+ err_print("*******************%s****************begin\n", __func__);
  initcode = &(tf->code);
  *initcode = newvector(CODE_BLOCK, Byte);
- maincode = 0; 
+ maincode = 0;
  maxmain = CODE_BLOCK;
  change2main();
  if (luaY_parse ()) lua_error("parse error");
@@ -416,13 +416,13 @@ void lua_parse (TFunc *tf)
  PrintCode(*initcode,*initcode+maincode);
 }
 #endif
- printf("*******************%s****************end!!!\n", __func__);
+ err_print("*******************%s****************successful!!!\n", __func__);
 }
 
 
 
 # line 410 "lua.stx"
-typedef union  
+typedef union
 {
  int   vInt;
  float vFloat;
@@ -882,7 +882,7 @@ static int luaY_state;			/* current state */
 static int luaY_tmp;			/* extra var (lasts between blocks) */
 
 #if defined(__cplusplus) || defined(__STDC__) || defined(lint)
-static int __yaccpar_lint_hack__ = 0;   
+static int __yaccpar_lint_hack__ = 0;
 				/* if you change the value from 0 to
 				something else, make sure you know
 				what to do with luaY_errlab reference.
@@ -996,7 +996,7 @@ $vars */
                         /*
                         ** reallocate and recover.  Note that pointers
                         ** have to be reset, or bad things will happen
-                        */ 
+                        */
                         int luaY_ps_index = (luaY__ps - luaY_s);
                         int luaY_pv_index = (luaY__pv - luaY_v);
                         int luaY_pvt_index = (luaY_pvt - luaY_v);
@@ -1305,10 +1305,10 @@ $vars */
 	*/
 	switch( luaY_tmp )
 	{
-		
+
 case 6:
 # line 469 "lua.stx"
-{ 
+{
 		code_byte(PUSHFUNCTION);
 		code_code(luaY_pvt[-0].pFunc);
 		storesinglevar(luaY_pvt[-1].vLong);
@@ -1412,7 +1412,7 @@ case 28:
           } break;
 case 29:
 # line 578 "lua.stx"
-{ 
+{
 	  luaY_val.vLong = pc;
 	  code_byte(0);		/* open space */
 	  code_word (0);
@@ -1492,7 +1492,7 @@ case 52:
 {code_byte(POP); } break;
 case 53:
 # line 614 "lua.stx"
-{ 
+{
       basepc[luaY_pvt[-2].vLong] = ONFJMP;
       code_word_at(basepc+luaY_pvt[-2].vLong+1, pc - (luaY_pvt[-2].vLong + sizeof(Word)+1));
       luaY_val.vLong = 0;
@@ -1502,7 +1502,7 @@ case 54:
 {code_byte(POP); } break;
 case 55:
 # line 620 "lua.stx"
-{ 
+{
       basepc[luaY_pvt[-2].vLong] = ONTJMP;
       code_word_at(basepc+luaY_pvt[-2].vLong+1, pc - (luaY_pvt[-2].vLong + sizeof(Word)+1));
       luaY_val.vLong = 0;
@@ -1531,8 +1531,8 @@ case 59:
 { luaY_val.vInt = 0; } break;
 case 60:
 # line 649 "lua.stx"
-{ 
-               code_byte(PUSHSELF); 
+{
+               code_byte(PUSHSELF);
 	       code_word(luaI_findconstant(luaY_pvt[-0].pTStr));
                luaY_val.vInt = 1;
 	     } break;
@@ -1608,7 +1608,7 @@ case 82:
 		} break;
 case 83:
 # line 716 "lua.stx"
-{ 
+{
 	       push_field(luaI_findconstant(luaY_pvt[-2].pTStr));
 	      } break;
 case 84:
@@ -1624,19 +1624,19 @@ case 87:
 # line 727 "lua.stx"
 {
 		  luaY_val.vInt=luaY_pvt[-2].vInt+1;
-		  if (luaY_val.vInt%FIELDS_PER_FLUSH == 0) 
+		  if (luaY_val.vInt%FIELDS_PER_FLUSH == 0)
 		    flush_list(luaY_val.vInt/FIELDS_PER_FLUSH - 1, FIELDS_PER_FLUSH);
 		} break;
 case 88:
 # line 735 "lua.stx"
 {
-	   nvarbuffer = 0; 
+	   nvarbuffer = 0;
 	   add_varbuffer(luaY_pvt[-0].vLong);
 	   luaY_val.vInt = (luaY_pvt[-0].vLong == 0) ? 1 : 0;
 	  } break;
 case 89:
 # line 741 "lua.stx"
-{ 
+{
 	   add_varbuffer(luaY_pvt[-0].vLong);
 	   luaY_val.vInt = (luaY_pvt[-0].vLong == 0) ? luaY_pvt[-2].vInt + 1 : luaY_pvt[-2].vInt;
 	  } break;

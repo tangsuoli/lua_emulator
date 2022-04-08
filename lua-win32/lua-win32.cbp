@@ -26,9 +26,12 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="../../lua-emulator" />
+					<Add directory="../lua-2.4" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="winmm" />
 				</Linker>
 			</Target>
 		</Build>
@@ -41,6 +44,10 @@
 			<Add library="kernel32" />
 			<Add library="comctl32" />
 		</Linker>
+		<Unit filename="../eprint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../eprint.h" />
 		<Unit filename="../lua-2.4/fallback.c">
 			<Option compilerVar="CC" />
 		</Unit>

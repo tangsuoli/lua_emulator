@@ -2,18 +2,17 @@
 ** fallback.c
 ** TecCGraf - PUC-Rio
 */
- 
+
 char *rcs_fallback="$Id: fallback.c,v 1.25 1996/04/25 14:10:00 roberto Exp $";
 
 #include <stdio.h>
 #include <string.h>
- 
+
 #include "mem.h"
 #include "fallback.h"
 #include "opcode.h"
 #include "lua.h"
 #include "table.h"
-
 
 static void errorFB (void);
 static void indexFB (void);
@@ -70,23 +69,23 @@ static void errorFB (void)
 {
   lua_Object o = lua_getparam(1);
   if (lua_isstring(o))
-    fprintf (stderr, "lua: %s\n", lua_getstring(o));
+    err_print("[ERROR]lua: %s\n", lua_getstring(o));
   else
-    fprintf(stderr, "lua: unknown error\n");
+    err_print("[ERROR]lua: unknown error\n");
 }
- 
+
 
 static void indexFB (void)
 {
   lua_pushnil();
 }
- 
+
 
 static void gettableFB (void)
 {
   lua_error("indexed expression not a table");
 }
- 
+
 
 static void arithFB (void)
 {

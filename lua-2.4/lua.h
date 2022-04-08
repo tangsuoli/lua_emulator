@@ -9,6 +9,8 @@
 #ifndef lua_h
 #define lua_h
 
+#include "eprint.h"
+
 #define LUA_VERSION	"Lua 2.4"
 #define LUA_COPYRIGHT	"Copyright (C) 1994, 1995 TeCGraf"
 #define LUA_AUTHORS 	"W. Celes, R. Ierusalimschy & L. H. de Figueiredo"

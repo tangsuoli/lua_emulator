@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
-	<ActiveTarget name="Debug" />
-	<File name="lua-2.4\lua.h" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<ActiveTarget name="Release" />
+	<File name="eprint.h" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="900" topLine="35" />
+			<Cursor1 position="120" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="lua_test.c" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="test\card.lua" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2267" topLine="80" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="test\sort.lua" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="6253" topLine="209" />
+			<Cursor1 position="478" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="lua-2.4\opcode.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="lua-2.4\fallback.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="9910" topLine="440" />
+			<Cursor1 position="266" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1537" topLine="184" />
+		</Cursor>
+	</File>
+	<File name="lua-2.4\lex.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3237" topLine="132" />
+		</Cursor>
+	</File>
+	<File name="eprint.c" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="64" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="lua-2.4\opcode.c" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10973" topLine="438" />
 		</Cursor>
 	</File>
 	<File name="lua-2.4\inout.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -32,39 +52,34 @@
 			<Cursor1 position="303" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="lua-2.4\parser.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="lua-2.4\opcode.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="21038" topLine="728" />
+			<Cursor1 position="2587" topLine="90" />
 		</Cursor>
 	</File>
-	<File name="lua-2.4\fallback.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="lua-2.4\lua.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="21" />
+			<Cursor1 position="900" topLine="35" />
 		</Cursor>
 	</File>
-	<File name="test\card.lua" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="lua-2.4\fallback.c" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="792" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="lua-2.4\parser.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="486" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="test\sort.lua" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="478" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="lua-2.4\lex.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3237" topLine="132" />
+			<Cursor1 position="275" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="test\array.lua" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="lua-2.4\parser.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="486" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="lua-2.4\parser.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8546" topLine="374" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

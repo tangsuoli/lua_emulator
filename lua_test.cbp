@@ -24,6 +24,7 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="lua-2.4" />
+					<Add directory="../lua-emulator" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -33,6 +34,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="eprint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="eprint.h">
+			<Option target="Release" />
+		</Unit>
 		<Unit filename="lua-2.4/fallback.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -81,9 +88,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lua-2.4/undump.h" />
-		<Unit filename="lua_test.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

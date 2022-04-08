@@ -396,7 +396,7 @@ void lua_error (char *s)
     longjmp(*errorJmp, 1);
   else
   {
-    fprintf (stderr, "lua: exit(1). Unable to recover\n");
+    fprintf (stderr, "[ERROR]lua: exit(1). Unable to recover\n");
     exit(1);
   }
 }
@@ -459,7 +459,7 @@ int lua_setlocal (lua_Function func, int local_number)
 static int do_protectedrun (int nResults)
 {
 #if 1//TESTDEBUG
-  printf("*******************%s****************\n", __func__);
+  err_print("*******************%s****************begin\n", __func__);
 #endif
   jmp_buf myErrorJmp;
   int status;
@@ -480,6 +480,7 @@ static int do_protectedrun (int nResults)
     status = 1;
   }
   errorJmp = oldErr;
+  err_print("*******************%s****************successful!!!\n", __func__);
   return status;
 }
 
@@ -520,7 +521,6 @@ static int do_protectedmain (void)
   luaI_free(tf.code);
   return status;
 }
-
 
 /*
 ** Execute the given lua function. Return 0 on success or 1 on error.
